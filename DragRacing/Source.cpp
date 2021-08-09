@@ -16,12 +16,9 @@ void CarNumberTwo()
 }
 int main()
 {
-	int a = 0;
-	//Car car(422, 380, 4, 0,Engine::Jondamotor);
 	std::thread thread1(CarNumberOne);
 	std::thread thread2(CarNumberTwo);
 	thread1.join();
 	thread2.join();
-	std::cin >> a;
 	return 0;
 }
